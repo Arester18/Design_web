@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Primera página web</title>
+        <meta charset="utf-8"><!--Con esto cambiamos la decodificación de la página-->
+        <meta name="keywords" content="harina, leche, huevo">
+        <meta name="description" content="Esta es la página creada para la industria de alimentos">
+        <meta name="autohor" content="Diego Casas">
+        <meta name="copyright" content="Nombre_de_la_empresa">
+        <meta name="robots" content="noindex"><!-- NO INDEX quiere decir que nadie encontrará la página-->
+        <meta name="robots" content=""><!--Investiga esto-->
+        <link rel="stylesheet" type="text/css" href="Aprendiendo_CSS.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+        
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+    </head>
+    <body>
+        <h1 id="inicio"><b>Aqui comienza mi aprendisaje de HTML</b></h1>
+        <div>
+            <h2>1_Características importantes</h2>
+            <p><b>1_Tamaños de títulos: </b>se hacen con las etiquetas que van desde h1 hasta h7</p>
+            <p><b>2_Comentarios: </b>Se usa la etiqueta: &lt;!-- y se cierra con: --&gt;</p>
+            <p><b>3_insertar signos especiales: </b></p>
+            <ol>
+                <li>Para el signo menos (&lt;): &+l+t</li>
+                <li>Para el signo mayor (&gt;): &+g+t</li>
+                <li>Para la &: &+a+m+p</li>
+            </ol>
+            <p><b>4_Estilos de letra:</b></p>
+            <ol>
+                <li><b>Negrita</b></li>
+                <li><i>Italica</i></li>
+                <li><small>Chiquita</small></li>
+            </ol>
+            <p><b>5_Enter o completar la línea: </b>Se usa la etiqueta br</p>
+            <p><b>6_Anillar palabras: </b>Esta función une dos o más palabras para que en el navegador siempre permanezcan en la misma línea. Esta etiqueta es: & n b s p;</p>
+            <p><b>7_Etiqueta de derechos de autor: </b>& c o p y;</p>
+            <P>El espacio de trabajo, osea todo lo blanco se llama biupor</P>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2><b>2_Insertar enlaces</b></h2>
+            <p><b>1_Enlace simple: </b>Enlace de una página de internet</p>
+                <a href="https://facebook.com" title="titulo para ciegos?">Abre facebook</a><br>
+            <p><b>2_Enlace propio: </b>Abre una página de nuestro proyecto</p>
+                <a href="Pagina2.html">Página 2</a><br>
+            <p><b>3_Enlace que abre otra pestaña: </b></p>
+                <a href="cosa1/Pagina3.html" target="_blank">Abre otra página</a><br>
+            <p><b>4_Direccionamiento en la página: </b>Esta etiqueta de envía a diferentes partes de la página web</p>
+                <a href="#inicio">Ve al inicio de la página</a><br>
+            <p>puedes revisar la página del profesor de diseño web:</p>
+                <a href="https://clearlydecoded.com/" target="_blank">Abre la página del profesor de siseño web</a>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2><b>3_Para crear listas</b></h2>
+            <p>Hay dos maneras de crear listas: las enumeradas (con la etiqueta ol) y no enumeradas (con la etiqueta ul). Cada elemento tendrá la etiqueta: "li"</p>
+            <h3>Lista no enumerada</h3>
+                <ul>
+                    <li>Leche</li>
+                    <li>Harina</li>
+                    <li>Huevo</li>
+                    <li>Auto</li>
+                </ul>
+            <h3>Lista enumerada</h3>
+                <ol>
+                    <li>Leche</li>
+                    <li>Harina</li>
+                    <li>Huevo</li>
+                    <li>Auto</li>
+                </ol>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2><b>4_Para insertar imagen, video y audio</b></h2>
+            <p><b>1_Para insertar imagen: </b>Para insertar imágenes se usa la etiqueta "img" y se nombra la etiqueta con "src". El tamaño de las imágenes se modifican unicamente si las tienes dentro de tu proyecto. Es recomendable insertar un tamaño a la imagen. Esto debido a que cuando la imagen cargue de google en una pc con internet lento, ocasionará que al inicio se vea un reacomodo brusco del espacio que le corresponde a la imagen</p>
+                <img src="imagen1.jpg" height="200" alt="primera_imagen">
+                <img src="imagen1.jpg" width="200" title="edificio">
+                <img src="imagen1.jpg" width="200" title="edificio">
+                <img src="imagen1.jpg" height="300" alt="imagen cortada">
+                <p>La etiqueta alt sirve para cuando la imagen sea borrada o movida</p>
+            <p><b>2_Para insertar video: </b>Se usa la etiqueta video y la etiqueta "src" para nombrar al video</p>
+                <video src="video1.mp4" controls=""></video><br>
+            <p><b>3_Para insertar audio: </b>Se usa la etiqueta audio y la etiqueta "src" para nombrar el audio</p>
+                <audio src="https://www.youtube.com/a39862f5-7804-406d-ae0f-9bb2863d580d" controls="">Suena el dembow</audio><br>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2><b>5_Formularios</b></h2>
+            <form>
+                <p>Para insertar texto: </p><input type="text" required=""><br>
+                <p>Pra cambiar el valor del tecto: </p><input type="text" required="" value="enunciado"><br>
+                <p>Para insertar contraseña: </p><input type="password"><br>
+                <p>Para insertar número: </p><input type="number"><br>
+                <p>Para insertar correo: </p><input type="email"><br>
+                <p>Para insertar color: </p><input type="color"><br>
+                <p>Para insertar un rango: </p><input type="range" min="10" max="1000"><br>
+                <p>Para insertar día: </p><input type="date"><br>
+                <p>Para insertar hora: </p><input type="time"><br>
+                <p>Para insertar un boton: </p><input type="button" value="boton"><br>
+                <p>Para insertar un botón de enviar: </p><input type="submit"><br>
+                <p>Para insertar una tarea</p><textarea readonly="">Holaaaa como estás :D</textarea><br>
+                Nota: "readonly" nos indica que solo lo podemos leer
+            </form>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2><b>6_Metadatos</b></h2>
+            <p>Los metadatos son como etiquetas que ayudan en la busqueda de algo
+                los metadatos se ponen en head. Investiga sobre los metatados</p>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2><b>7_Para crear una barra de navegación</b></h2>
+                <header>
+                    <nav>
+                        <ul>
+                            <li><a href="micuenta.html">Inicio</a></li>
+                            <li><a href="micuenta.html">Mi cuenta</a></li>
+                            <li><a href="micuenta.html">Sobre nosotros</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            <p>Investiga sobre la barra de navegación</p>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2><b>8_Para crear un artículo, secciones y la etiqueta aside</b></h2>
+                <article>
+                    <h3>Este es un encabezado para este articulo</h3>
+                    <section>
+                        <header>Las secciones siempre deben tener encabezado</header>
+                        <h3>Este es el encabezado</h3>
+                        <p>Esta página es el inicio</p>
+                        <p>aqui hay un contenido</p>
+                    </section>
+                </article>
+                <aside>
+                    <h3>contenido extra</h3>
+                    <p>Lorem</p>
+                </aside>
+                <p>Aside es para colocar contenido extra</p>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2><b>9_Etiqueta table</b></h2>
+            <table>
+                <tr>
+                    <td><b>Nombre  </b></td>
+                    <td><b>Apellido  </b></td>
+                    <td><b>Canal  </b></td>
+                    <td><b>Seguidores</b></td>
+                </tr>
+                <tr>
+                    <td><b>Diego  </b></td>
+                    <td><b>Casas Salvador  </b></td>
+                    <td><b>Canal  </b></td>
+                    <td><b>Seguidores</b></td>
+                </tr>
+            </table>
+        </div>
+        <!--*********************************************-->
+        <p>Para ver los errores que has cometido ve al siguiente enlace:</p>
+        <a href="https://validator.w3.org/#validate_by_input" target="_blank">Página para ver los errores cometidos</a>
+        <!--*********************************************-->
+        <!--*********************************************-->
+        <!--*********************************************-->
+        <!--*********************************************-->
+        <!--*********************************************-->
+
+        <h1>Aquí aprenderás todo sobre el curso de CSS</h1>
+        <p><b>Basic CSS</b></p>
+        <p>Para relacionar los estilos de CSS con html se debe poner el código que se encuentra en el head de esta página. Tambien hay estilos de línea: </p>
+        <p style="color:blue">Este es un estilo en línea</p>
+        <!--*********************************************-->
+        <div>
+            <h2>1_Selectores</h2>
+            Existen 7 tipos de selectores
+            <ol>
+                <li><b>Universal</b>
+                    <ul><li>Esta etiqueta altera toda la página web</li></ul>
+                </li>
+                <li><b>De tipo</b>
+                    <ul><li><b>Etiqueta de tipo "p"</b></li></ul>
+                </li>
+                <li><b>Clases</b>
+                    <ul>
+                        <li><b>Estas elige a ciertos bloque y los agrupa con cierta clase</b></li>
+                        <li class=clase_1>Palabras</li>
+                        <li class=clase_1>que</li>
+                        <li class=clase_1>pertenecen a </li>
+                        <li class=clase_1>una sola clase</li>
+                    </ul>
+                </li>
+                <li><b>ID</b>
+                    <ul><li id="ID">Etiqueta con un id</li></ul>
+                </li>
+                <li><b>Por atributo</b>
+                    <ul>
+                        <li id="atributo_abc">Etiqueta con atributo</li>
+                    <li>Los atributos no s le pueden insertar a las etiquetas "li"</li>
+                    </ul>
+                </li>
+                <li><b>Descendiente</b>
+                    <ul>
+                        <li><small>Etiqueta con descendencia</small></li>
+                        <li><small>Etiqueta con descendencia</small></li>
+                    </ul>
+                </li>
+                <li><b>Pseudo-clases</b>
+                    <ul><li id="pseudo_clase">Etiqueta con pseudoclase</li></ul>
+                </li>
+            </ol>
+            <p>Investiga sobrela etiqueta hover y las demás etiquetas que pertenecen a pseudoclases.Tambien existe las pseudo clases: ":link" ":visited" ":hover" ":active" ":nth-child"</p>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2>2_Especificidad</h2>
+            <p>Rango de importancia</p>
+            <ol>
+                <li>!important</li>
+                <li>Estilos en línea</li>
+                <li>Identificadores: "id"</li>
+                <li>
+                    <ul>
+                        <li>clases</li>
+                        <li>pseudo-clases</li>
+                        <li>atributos</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>Elementos</li>
+                        <li>Pseudo-elementos</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Para poner el "!important" se debe poner al lado del atributo que quieras fijar</p>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2>3_Metología Bem</h2>
+            <div class="contact-form">
+                <input type="text" class="contact-form__input">
+                <input type="text" class="contact-form__input--active">
+                <input type="text" class="contact-form__input-active">
+                <input type="text" class="contact-form__input">
+            </div>
+            <p>Para usar la metodología bem podemos hacer el siguiente llamado en la parte de CSS: .contact-form__input:first-child</p>
+            <p>Otra forma de hacere esto es poner .contact-form__input--active</p>
+            <p><b>Debes estudiar la metodología Bem</b></p>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2 class=unidades_de_medida>4_Unidades de medida</h2>
+            <p class=unidades_de_medida>Existen dos unidades de medida:</p>
+            <ol>
+                <li>La relativa</li>
+                <li>La fija</li>
+            </ol>
+            <p><b>Medidas relativas</b></p>
+            <p>Vamos a crear un div para que sea todo más entendible. Las medidas relativas son Rem y Em</p>
+            <div class="contact-form">
+                <p>Las siguientes palabras están sujetas a cambiar de tamaño:</p>
+                <h3 class="contact-form__h1">Palabra 1</h3>
+                <h3 class="contact-form__h2">Palabra 2</h3>
+                <h3 class="contact-form__h3">Palabra 3</h3>
+                <h3 class="contact-form__h4">Palabra 4</h3>
+            </div>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2>5_Propiedades de texto</h2>
+                <p class="propiedades__1">Tamaño de letra</p>
+                <p class="propiedades__2">Tipo de letra</p>
+                <p class="propiedades__3">Cambia el tamaño azul de la caja</p>
+                <p class="propiedades__4">Cambia el grosor de la letra según el tipo de letra</p>
+                <p>En google font hay varias tipografías</p>
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2>6_Teoría de cajas</h2>
+            <p>La teoria de cajas se puede ver de la siguiente manera. En la imagen se muestran las 4 propiedades de las cajas</p>
+            <img src="dimensiones_de_caja.png" height="200" alt="imagen_para_teorías_de_cajas"><br>
+            <div>
+                <p>1_El "line-height" cambia la altura del padding, la parte azul</p>
+                <p>2_El padding altera altera la distancia entre el textp y la caja</p>
+                <p>3_El border altera el borde, la parte negra</p>
+                <p>4_El margin altera la parte verde</p>
+            </div>
+            <h3 id="cambia_de_bloque_a_linea">Caja de linea a bloque</h3>
+            <p>en linea</p>
+            <b>en bloque</b><br>
+            <h3 id="cambia_el_padding">Usando el padding</h3>
+            <p>La propiedad "box-sizing: content-box" toma en consideración la existencia de los padding modificados</p>
+            <p>Tambien existe la propiedad "box-sizing: border-box" que no lo considera</p>
+            <h3 id="cambia_el_margin">Usando el margin</h3><!--en realidad se usan las otras 3 propiedades, solo que para reducir espacio solo pongo margin-->
+        </div>
+        <!--*********************************************-->
+        <div>
+            <h2>7_Otras características de cajas</h2>
+            <p>Aquí veremos como usar: "z-index, outline, position, display".</p>
+            <div>
+                <h3>z.index</h3>
+                <p><b>z-index </b>Esta propiedad pone una caja encima de la otra, a esta propiedad le podemos poner los valores que queramos, el que tenga mayor valornumerico es el que estará por encima de las demás cajas. La caja padre nunca se puede poner encima de una caja hijo, a menos que le pongamos una position relativa negativa al hijo</p>
+                <div class="caja_padre">
+                    <p class="caja_hijo">caja hijo</p>
+                </div>
+            </div>
+            <div>
+                <h3>Outline</h3>
+                <p><b>Outline </b>Acontinuación se mostrará un texto tapado por el outline de la caja. El outline de la caja es como un margin pero que no ocupa espacio</p><br><br>
+                <p>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </p>
+                <h3 id="usando_outline">Usando outline</h3>
+                <br><br>
+            </div>
+            <div>
+                <h3>Position</h3>
+                <p><b>Position </b>Existen 4 formas de posicionar: "Static, relative, absolute, fixed, sticky". La posición static es la que viene por defecto, cuando está en esta posición se dice que no está posicionado</p>
+                <p>1_Relative: Cuando ponemos positon relative podemos mover la caja a otro lugar como si se tratara de un alma, mientras que el espacio que debería tener cuando no tenia esta propiedad se conserva. Podemos mover esta caja fantasma con: "top, right, botton y left", siendo las más importantes top y left</p>
+                <h3 id="usando_position1">Caja 1</h3>
+                <h3 id="usando_position2">Caja 2</h3>
+                <h3 id="usando_position3">Caja 3</h3>
+                <p>2_absolute: Esto es igual que el relative con la diferencia de que la caja ya no tiene un espacio reservado, pero su ubicación por defecto es donde debería estar la caja si no tuviese esta propiedad. Esta propiedad tambien hace que la caja se ajuste al contenido</p>
+                <div id="absoluto">
+                    <h3 id="absoluto_caja1">caja 1</h3>
+                    <h3 id="absoluto_caja2">caja 2</h3>
+                        <h3 id="absoluto_caja3">caja 3</h3>
+                    <h3 id="absoluto_caja4">caja 4</h3> 
+                    <h3 id="absoluto_caja5">caja 5</h3>  
+                </div>
+                <p>3_fixed: Es lo mismo que el absolute con la diferencia de que esta se queda fija en la pantalla del usuario</p>
+                <p>4_sticky: La position fixed hace que la caja se quede fijo, como si fuera una barra menú. La position sticky se quedrá quieto una vez que el usuario pase por la caja y siga bajando</p>
+                <div id="caja_fixed_sticky">
+                Esto texto se quedará quieto
+                </div>
+                <div id="texto_fixed">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati fuga ea reiciendis eum odit neque quae quas sit, hic totam maxime ex eos iure voluptatibus voluptates, tempora pariatur ab?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ullam laboriosam. Minima, assumenda magni? Repellat quaerat dolores ex explicabo blanditiis? Repudiandae, assumenda! Non placeat sequi iusto earum fugit unde blanditiis!ab?Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsum est, architecto perspiciatis pariatur sint, libero quis at magni aliquam vero. Dolore, amet est perferendis nobis autem nihil vel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, tenetur labore soluta quaerat laudantium quia aliquid. In nemo vel necessitatibus eius placeat dolorum voluptas ab earum. Molestiae, pariatur excepturi. Aliquid?</p>
+                </div>
+                <div>
+                    <p><b>Display </b>hay 7 tipos: block, inline, inline-block, flex, grid. inline-flex, inline-grid </p>
+                    <p>NOTA: Los inline no se pueden modificar el alto ni el ancho. Los inline block son la combinacion de inline y block</p>
+                    <p>Hay mas propiedades de display</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--*********************************************-->
+        <h2><b>Intermediate CSS</b></h2>
+        <div>
+            <h2>8_Overlflow</h2>
+            <p>Existen diferentes tipos: </p>
+            <div id="usando_overflow_auto">
+                <p>La propiedad que viene por defecto es inherit. Ahora usaremos la propiedad auto. </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, porro in necessitatibus natus soluta distinctio autem ipsam voluptas aut! Nobis itaque sit incidunt eveniet, quidem illum minima ullam recusandae! Architecto.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, porro in necessitatibus natus soluta distinctio autem ipsam voluptas aut! Nobis itaque sit incidunt eveniet, quidem illum minima ullam recusandae! Architecto.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, porro in necessitatibus natus soluta distinctio autem ipsam voluptas aut! Nobis itaque sit incidunt eveniet, quidem illum minima ullam recusandae! Architecto.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, porro in necessitatibus natus soluta distinctio autem ipsam voluptas aut! Nobis itaque sit incidunt eveniet, quidem illum minima ullam recusandae! Architecto.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, porro in necessitatibus natus soluta distinctio autem ipsam voluptas aut! Nobis itaque sit incidunt eveniet, quidem illum minima ullam recusandae! Architecto.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, porro in necessitatibus natus soluta distinctio autem ipsam voluptas aut! Nobis itaque sit incidunt eveniet, quidem illum minima ullam recusandae! Architecto.</p>
+            </div>
+            <p>NOTAS: La función scroll le agrega barra para localizarse así no la necesite</p>
+            <p>para ocultar alguna barra se debe poner hidden</p>
+            <div id="usando_hover">
+                <img src="simbolo_de_la_paz.png" height=300px alt="simbolo_de_la_paz" id="imagen_de_usando_hover">
+            </div><br><br><br><br><br>
+            <div id="usando_hover2">
+                <img src="https://s1.significados.com/foto/paze003268a052a053ee5ec481e2a09764_bg.png" height=300px alt="simbolo_de_la_paz" id="imagen_de_usando_hover2">
+            </div>
+        </div>
+        <div>
+            <h2><b>9_Float </b></h2>
+            <p>Ponemos un texto cualquiera: </p>
+            <div id="texto_cualquiera">
+                <h3>este es un titulo cualquiera</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptate ratione consequuntur quos modi ex, voluptatem saepe, alias sed temporibus omnis, eaque voluptatibus eligendi tenetur repellendus iure tempora obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ab, vero expedita error animi modi cupiditate optio iusto quidem quod qui quae numquam eum magni omnis possimus! Dicta, earum dolore!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsam assumenda rerum itaque neque nesciunt! Quia hic rerum recusandae doloremque obcaecati dolorem, esse saepe accusantium repellendus similique quisquam quasi ut?</p>
+            </div>
+            <div id="texto_cualquiera2">
+                <h3>Este es otro titulo cualquiera</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptate ratione consequuntur quos modi ex, voluptatem saepe, alias sed temporibus omnis, eaque voluptatibus eligendi tenetur repellendus iure tempora obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ab, vero expedita error animi modi cupiditate optio iusto quidem quod qui quae numquam eum magni omnis possimus! Dicta, earum dolore!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsam assumenda rerum itaque neque nesciunt! Quia hic rerum recusandae doloremque obcaecati dolorem, esse saepe accusantium repellendus similique quisquam quasi ut?</p>
+            </div><br><br>
+            <div id="contenedor_usando_float">
+                <img src="https://s1.1zoom.me/big3/471/Painting_Art_Back_view_Photographer_575380_3840x2400.jpg" height="250px" id="imagen_usando_float">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum a optio omnis, nihil iste doloribus dolorum esse nisi debitis eaque odio quasi modi harum dolore porro saepe sapiente reprehenderit vitae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minus, maxime dolorum sed id autem, ad voluptas sint, temporibus debitis explicabo ullam facere optio. Id hic eaque odit ni. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, facere blanditiis, tempora dolor odio nulla similique cum rerum harum ducimus neque culpa, eos molestias exercitationem dolorum nihil inventore hic laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum id quod dolores nulla magni aliquid, corrupti consectetur maiores deserunt molestias recusandae labore ipsum nemo obcaecati neque vitae tempora vel perspiciatis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non odit, quidem fugiat dolorum similique facere aliquid sunt impedit aliquam quo quaerat dolore rem explicabo ab, nostrum expedita adipisci provident quae.
+            </div>
+        </div>
+        <div>
+            <h2><b>10_Pseudoelementos </b></h2>
+            <div>
+                <h3>Usando first-inline y first-leter</h3>
+                <p id="usando_first_line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos minus enim qui perspiciatis voluptas unde aspernatur quaerat hic? Sunt magni consequuntur velit tenetur quod incidunt, voluptas doloribus labore placeat inventore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa asperiores mollitia magni repellendus, inventore molestias maxime velit, iste repudiandae facilis voluptate provident beatae, eveniet officia veniam unde dignissimos earum animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nihil ratione modi et vitae rem, officiis ad omnis ipsa consequuntur iste optio sequi, aspernatur ipsum tempora cumque, corporis ducimus neque?</p>
+            </div>
+            <div>
+                <h3>Usando Placeholder</h3>
+                <form id="form_usando_placeholder">
+                    <input type="password" placeholder="Introduce tu contraseña aquí" id="input_del_form_usando_placeholder">
+                </form>
+            </div>
+            <div>
+                <h3>Usando selection</h3>
+                <p>Aquí vamos a cambiar las forma de seleccionar </p>
+                <p id="texto_usando_selection">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni aut hic ex aliquid, aperiam, earum sapiente quibusdam natus recusandae harum libero. Ipsum voluptas possimus iste aperiam placeat maiores beatae id?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis itaque nam possimus neque, fugiat atque, natus ipsa quisquam pariatur dicta quo officiis quae tempore rerum hic harum obcaecati quas aperiam!</p>
+            </div>
+            <div>
+                <h3>Usando before y after</h3>
+                <p id="usando_before_y_after"> -- texto que está en medio -- </p>
+            </div>
+        </div>
+        <div>
+            <h2>11_Pseudoclases</h2>
+            <p>Existen las etiquetas: ":hover", ":link", ":visited", ":active", ":focus",":lang"</p>
+            <div>
+                <h3>Hover</h3>
+                <p id="usando_pseudoclase_hover"> Este es un texto</p>
+            </div>
+            <div>
+                <h3>Link y visited</h3>
+                <a id="usando_link" href="https://www.youtube.com/" target="_BLANK">Aplicamos la pseudo clase link</a>
+            </div>
+            <div>
+                <h3>Active</h3>
+                <p id="usando_active">Usando Active</p>
+            </div>
+            <div>
+                <h3>Focus</h3>
+                <input type="password" id="usando_focus">
+            </div>
+            <div id="usando_lang">
+                <h3>Lang</h3>
+                <b lang="en">Aqui usamos el lang1</b>
+                <b>Aqui usamos el lang2</b>
+            </div>
+        </div>
+        <div>
+            <h2>12_Object-Fit y Object-Position</h2>
+            <p>Vamos a cambiar las dimensioes de una imagen dentro de una caja</p>
+            <div id="usando_object-fit">
+                <img src="https://conceptodefinicion.de/wp-content/uploads/2015/04/fotografia.png" id="imagen_modificada">
+            </div>
+            <div id="usando_object-fit2">
+                <img src="https://conceptodefinicion.de/wp-content/uploads/2015/04/fotografia.png" id="imagen_modificada2">
+            </div>
+        </div>
+        <div>
+            <h2>13_Cursor</h2>
+            <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor" target="_blanck">Lista de cursores aquí</a>
+            <div id="cambia_cursor">
+            </div>
+        </div>
+        <div>
+            <h2>14_Colores</h2>
+            <p>Existen: color name, hexadecimal, RGB, RGBA, HSL, HSLA</p>
+            <p>RGB: red, green, blue</p>
+            <div id="cambia_color_rgb">Cuadrado a cambiar el color con rgb</div>
+            <div id="cambia_color2_rgba">Cuadrado a cambiar el color con rgba</div>
+            <div id="cambia_color_hexadecimal">Cuadrado a cambiar el color con hexadecimal</div>
+            <p>Para hexadecimal se puede poner 3, 4, 6 o hasta 8 valores. Como se muestra en la siguiente imagen</p>
+            <img src="hexadecimal.jpg" id="imagen_hexadecimal">
+        </div>
+        <div>
+            <h2>15_Responsive Design - Mobile First</h2>
+            <p>Responsive design se trabaja primero en computadora para luego adaptarlo a tablet y luego a celular</p>
+            <p>Mobile First se trabaja primero en celular, luego se adapta a talet, luego a pc. El buscador de google posiciona mejor las páginas que tienen a movile First</p>
+            <div id="caja_responsive_design">
+                <h3>Caja1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis iste delectus fugiat non similique itaque porro quam repellendus quo sint, doloribus animi dolores nemo nobis cum explicabo magnam ratione quae.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis iste delectus fugiat non similique itaque porro quam repellendus quo sint, doloribus animi dolores nemo nobis cum explicabo magnam ratione quae.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis iste delectus fugiat non similique itaque porro quam repellendus quo sint, doloribus animi dolores nemo nobis cum explicabo magnam ratione quae.</p>
+            </div>
+            <div id="caja_responsive_design2">
+                <h3>Caja2</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis iste delectus fugiat non similique itaque porro quam repellendus quo sint, doloribus animi dolores nemo nobis cum explicabo magnam ratione quae.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis iste delectus fugiat non similique itaque porro quam repellendus quo sint, doloribus animi dolores nemo nobis cum explicabo magnam ratione quae.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis iste delectus fugiat non similique itaque porro quam repellendus quo sint, doloribus animi dolores nemo nobis cum explicabo magnam ratione quae.</p>
+            </div>
+            <div>
+                <header>
+                    <nav class="nav">
+                        <ul class="nav__ul">
+                            <li class="nav__li"><i class="fas fa-home"></i><a href="a">Inicio</a></li>
+                            <li class="nav__li"><i class="fas fa-user-friends"></i><a href="a">Sobre nosotros</a></li>
+                            <li class="nav__li"><i class="fas fa-dollar-sign"></i><a href="a">Gana dinero</a></li>
+                            <li class="nav__li"><i class="fas fa-question-circle"></i><a href="a">Ayuda</a></li>
+                        </ul>
+                        <ul class="nav__responsive-ul">
+                            <div class="nav__responsive-button-container">
+                                <div class="nav__responsive-button fas fa-bars" ></div>
+                            </div>
+                            <div class="nav__li-container">
+                                <li class="nav__responsive-li"><i class="fas fa-home"></i><a href="a">Inicio</a></li>
+                                <li class="nav__responsive-li"><i class="fas fa-user-friends"></i><a href="a">Sobre nosotros</a></li>
+                                <li class="nav__responsive-li"><i class="fas fa-dollar-sign"></i><a href="a">Gana dinero</a></li>
+                                <li class="nav__responsive-li"><i class="fas fa-question-circle"></i><a href="a">Ayuda</a></li>
+                            </div>
+                            
+                        </ul>
+                    </nav>
+                </header>
+            </div><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div>
+            <h2>16_Flexbox</h2>
+        </div>
+        
+
+
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!--Este es un comentario-->
+        <footer>
+            <h4>Copyright - Todos los derechos reservados</h4>
+        </footer>
+    </body>
+    
+</html>

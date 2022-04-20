@@ -1,0 +1,703 @@
+
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*1_Selectores*/
+/*Etiqueta de tipo*/
+b p{
+    color:#f00;
+} 
+/*Etiqueta de clase*/
+.clase_1{
+    color:blue;
+}
+/*Etiqueta con id*/#ID{
+    color:green;
+}
+/*Etqueta con atributo*/
+#atributo_abc{
+    color:brown;
+}
+/*Etiqueta descendiente*/
+p small{
+    color:cornflowerblue;
+}
+/*Etiqueta pseudoclase*/
+#pseudo_clase:hover{
+    color:rgb(10, 75, 253);
+    /*Tambien existe las pseudo clases: ":link" ":visited" ":hover" ":active" ":nth-child"*/
+} 
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*2_Especificidad*/
+/*Esto se ve en HTML*/
+
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*3_Metodología Ben*/
+.contact-form__input:first-child{
+    color: grey;
+}
+.contact-form__input--active{
+    color:aquamarine;
+}
+.contact-form__input-active{
+    color:chartreuse;
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*4_Unidades de medida*/
+/*La relativa*/
+.unidades_de_medida{
+    padding: 0px;/*investiga sobre el pading*/
+    margin: 0px;/*El margin es lo que le quita lo naranja a la caja
+    (solo la parte de arriba*/
+}
+.contact-form{
+    font-size: 16px;/*define el tamaño de las letras de la caja*/
+    background-color: bisque;
+}
+.contact-form__h1{
+    font-size:20px
+    /*Se puede cambiar el "px" por "cm". "mm" que quiere 
+    decir centímetros y milímetros respectivamente*/
+}
+.contact-form__h2{
+    font-size: 1.5em;
+    
+    /*Por defecto 1em vale 16 px*/
+    /*1em vale el número de píxeles de la caja que lo 
+    contiene, en este caso sería 1em=20px*/
+}
+.contact-form__h3{
+    background-color: blue;
+    width: 50vw;
+    height: 5vh;
+}
+.contact-form__h4{
+    background-color: green;
+    width: 50%;
+    height: 10%;
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*5_Propiedades de letra*/
+.propiedades__1{
+    font-size:1.5em;/*Para cambiar el tamño de letra*/
+}
+.propiedades__2{
+    font-family: 'Open Sans', sans-serif
+    /*Para ver más estilos de letra, podemos buscar "google fonts" en el navegador. Elegimos el estilo que querramos, copiamos el estilo  y lo pegamos en el head */
+}
+.propiedades__3{
+    line-height: 4;/*Esta propiedad cambia la altura de la caja que contiene a la letra. un line-height de 1 hace que la caja y la letra tengan la misma altura*/
+}
+.propiedades__4{
+    font-weight: 700;/*Esta función cambia el grosor de la letra. La cantidad de grosores depende del tipo de letra o tipografía*/
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*6_Teoría de cajas*/
+#cambia_de_bloque_a_linea{
+    display: inline-block;
+}/*Se aclara que se convierte en un elemento en línea pero puede recibir las propiedades de un elemento en bloque*/
+/*Pading*/
+/*los padding son la distancia entre el texto y el bloque, existen 4 padding:*/
+/*left, top, tigth, bottom*/
+#cambia_el_padding{
+    display: inline-block;
+    background-color: blue;
+    padding-top:40px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    /*si le ponemos las siguientes dos propiedades la caja tendría las dimensiones señaladas por estas mas el valor de los padding*/
+    height:100px;
+    width:100px;
+    box-sizing: content-box;
+    text-align: center;
+}
+#cambia_el_margin{
+    display: inline-block;
+    background-color: greenyellow;
+    padding: 30px;
+    margin: 50px;/*Para centrar una caja está "auto" en vez de 100px*/
+    /*Tambien podemos redondear los bordes*/
+    border-radius: 30px;
+    border-radius: 50%;
+    /*Los siguientes son tipos de bordes*/
+    border: 5px double blue;
+    border: 5px dashed blue;
+    border: 5px solid blue;
+    border: 5px inset rgb(255, 0, 119);
+    /*por ultimo modificaremos el content*/
+    /*el content cambia las dimensiones de las letras*/
+    line-height: 50px;
+    /*Por ultimo veremos las sombras de la caja*/
+    box-shadow: 2px 4px 10px 0 indigo;
+    /*Sombras de la letra*/
+    text-shadow: 2px 2px 7px mediumblue, 2px 2px 7px mediumblue;/*si quieres insentificar la caracteristica, pones varias veces como se muestra*/
+    /*veremos la rotacion de la caja*/
+    transform: rotate(20deg);
+    /*Parta centrar la caja*/
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*7°Otras caracteristicas de cajas: outline, position, z-index, display*/
+/*Posicion relativa para caja padre e hijo*/
+.caja_padre{
+    position: relative;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+.caja_hijo{
+    position: relative;
+    display: inline-block;
+    background-color: rgb(255, 234, 6);
+    width: 80px;
+    height: 80px;
+}/*la caja padre nunca se puede poner encima de una caja hijo, a menos que le pongamos una position relativa negativa al hijo*/
+
+#usando_outline{
+    width:100px;
+    height: 100px;
+    background: red;
+    border: 10px solid blue;/*ocupa un lugar en el padding, pero si se tiene la propiedad content box, este ocupará un espacio en el margin*/
+    margin:auto;/*Para centrar la caja*/
+    outline:50px solid greenyellow;/*Es como un margin pero que no ocupa espacio*/
+    box-sizing: content-box;
+}
+
+#usando_position1{
+    background-color: blue;
+    width: 120px;
+    height: 120px;
+    display: block;
+    padding: 0;
+}
+#usando_position2{
+    background-color: red;
+    width: 120px;
+    height: 120px;
+    display: block;
+    padding: 0;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1
+    /*aquí cuando se habla de position relativa el top y el left tienen más importancia*/
+}
+#usando_position3{
+    background-color: rgb(255, 251, 0);
+    width: 120px;
+    height: 120px;
+    display: block;
+    position: relative;
+}
+
+
+#absoluto{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: deepskyblue;
+    margin: auto;
+}
+#absoluto_caja1{
+    width: 120px;
+    height: 120px;
+    background-color: lavender;
+    left:0;
+    top:0;
+    position: absolute;
+    margin:0;
+}
+#absoluto_caja2{
+    width: 120px;
+    height: 120px;
+    background-color: lightslategray;
+    position: absolute;
+    opacity: 0.8;/*la opasidad va desde 0 hasta 1*/
+    right:0;
+    top:0;
+    margin:0;
+}
+#absoluto_caja3{
+    width: 120px;
+    height: 120px;
+    background-color: powderblue;
+    bottom:0;
+    position: absolute;
+    margin:0;
+}
+#absoluto_caja4{
+    width: 120px;
+    height: 120px;
+    background-color: darkorange;
+    bottom:0;
+    right:0;
+    position: absolute;
+    margin:0;
+}
+#absoluto_caja5{
+    width: 120px;
+    height: 120px;
+    background-color: royalblue;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position: absolute;
+    margin:auto;
+}
+
+#caja_fixed_sticky{
+    background-color: royalblue;
+    font-size:40px;
+    position: sticky;/*La position fixed hace que la caja se quede fijo, como si fuera una barra menú*/
+    top:0;
+    margin:0;
+    width: 100%;
+    height: 70px;
+}
+#texto_fixed{
+    font-size: 48px;
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*8"Overflow*/
+#usando_overflow_auto{
+    margin: auto;
+    margin-top:100px;
+    height: 350px;
+    width: 350px;
+    background-color: slategray;
+    border: 5px solid rgb(10, 75, 253);
+    overflow: auto;/*Esto hace que el contenido de una caja no se salga de la caja y le agrega dos barras para mover y ver el texto en su totalidad. Para hacer queno se vea debes poner hiden*/
+}
+#usando_hover{
+    margin: auto;
+    margin-top:50px;
+    background-color: blueviolet;
+    border: 5px solid red;
+    width: 200px;
+}
+#imagen_de_usando_hover{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 70px;
+    left: 70px;
+}
+#usando_hover2{
+    background-color:rgb(255, 0, 119);
+    border: 5px solid royalblue;
+    background-color: skyblue;
+    margin: auto;
+    height: 270px;
+    width: 270px;
+    overflow: hidden;
+}
+#imagen_de_usando_hover2{
+    margin-top: 30px;
+    margin-left: 40px;
+    transition: all 1.2s;
+}
+#imagen_de_usando_hover2:hover{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*9°Float*/
+#texto_cualquiera{
+    background-color: springgreen;
+    display: inline-block;
+    height: 350px;
+    width: 45%;
+}
+#texto_cualquiera2{
+    background-color: turquoise;
+    display: inline-block;
+    width: 45%;
+}
+#contenedor_usando_float{
+    margin: auto;
+    background-color: tomato;
+    width: 50%;
+    padding:20px;
+}
+#imagen_usando_float{
+    top: 50px;
+    left: 40px;
+    float: right;
+    width: 300px;
+    margin-left: 10px;;
+}
+#texto_del_float{
+    float: left;
+    width:50%;
+    
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*10°Pseudoelementos*/
+#usando_first_line::first-line{
+    color: blue;
+    font-size: 1.5em;
+}
+#usando_first_line::first-letter{
+    color:red;  
+}/*Estas etiquetas no funcionan con elementos inline*/
+#form_usando_placeholder{
+    margin: auto;
+    padding: 20px;
+    width:700px;
+    background-color: grey;
+}
+#input_del_form_usando_placeholder{
+    width:100%;
+}
+#input_del_form_usando_placeholder::placeholder{
+    color:indianred;
+}
+#texto_usando_selection::selection{
+    color: skyblue;
+    background-color: indigo;
+}
+
+#usando_before_y_after::before{
+    content:"este es el before";
+    color:rgb(102, 255, 13);
+}
+#usando_before_y_after::after{
+    content:"esto es el after";
+    color:tan
+}
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*11°Pseudoclases*/
+#usando_pseudoclase_hover{
+    margin: auto;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transition: width 1.2s, height 1.2s;
+}
+#usando_pseudoclase_hover:hover{
+    background-color: teal;
+    width: 120px;
+    height: 120px;
+}
+#usando_link:link{
+    color: rgb(13, 17, 255);
+}
+#usando_link:visited{
+    color: darkcyan;
+}
+#usando_active{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: darkorchid;
+    margin: 50px;
+    transition: 1.2s;
+}
+#usando_active:active{
+    background-color: deepskyblue;
+    width: 250px;
+}
+#usando_focus{
+    margin:auto;
+    transition: all 1,2s;
+}
+#usando_focus:focus{
+    background-color: blue;
+    padding: 10px;
+}
+#usando_lang{
+    background-color: forestgreen;
+}
+:lang(en){
+    background-color: grey;
+    padding: 20px;
+}/*Esto ensrio sirve?*/
+#usando_object-fit{
+    margin:auto;
+    height:250px;
+    width: 250px;
+    border: 5px solid red;
+}
+#imagen_modificada{
+    width:100%;
+    height: 100%;
+    object-fit:cover;/*Esto tiene 4 valores: contain, cover, none, scale-down. Contain es el valor por defecto*/
+    /*cover ajusta la imagen al contenedor y recorta la imagen sobrante*/
+    /*contain lo ajusta a como mejorle convenga*/
+    /*none no le hace ningun cambio a la imagen, si la caja es mas grande que la imagen, entonces veríamos solo una porción de la imagen en la caja*/
+    /*elije la resolución más baja entre none y contain*/
+    border: 5px solid blue;
+}
+#usando_object-fit2{
+    margin: auto;
+    height: 250px;
+    width: 400px;
+    border: 5px solid red;
+}
+#imagen_modificada2{
+    width:400px;
+    height:170px;
+    border: 5px solid blue;
+    object-fit:cover;
+    object-position: bottom;
+}
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+#cambia_cursor{
+    margin: auto;
+    height: 200px;
+    width: 300px;
+    border: 5px solid red;
+    background-color: indianred;
+    cursor: pointer;
+}
+#cambia_cursor:active{
+    cursor: row-resize;
+    cursor: progress;
+    cursor: copy;
+}
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+#cambia_color_rgb{
+    margin: 50px;
+    padding: 30px;
+    height: 200px;
+    width: 100px;
+    display: inline-block;
+    background-color: rgb(130, 230, 100);
+}
+#cambia_color2_rgba{
+    margin: 50px;
+    padding: 30px;
+    height: 200px;
+    width: 100px;
+    display: inline-block;
+    background-color: rgba(130, 230, 100, 0.5);
+}
+#cambia_color_hexadecimal{
+    margin: 50px;
+    padding: 30px;
+    height: 200px;
+    width: 100px;
+    display: inline-block;
+    background-color: #f23;
+}
+#imagen_hexadecimal{
+    display: block;
+    margin: auto;
+    height: 280px;
+}
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+#caja_responsive_design{
+    width: 45%;
+    display: inline-block;
+    background-color: #ddd;
+}
+#caja_responsive_design2{
+    width: 45%;
+    display: inline-block;
+    background-color: #ddf;
+}
+@media only screen and (max-width:716px){
+    #caja_responsive_design{
+        display: block;
+        width: 100%;
+    }
+    #caja_responsive_design2{
+        display: block;
+        width: 100%;
+    }
+}
+
+
+.nav__responsive-ul{
+    display: none;
+}
+.nav{
+    background-color: darkslateblue;
+}
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+    color: #fff;
+}
+.nav__li:hover a{
+    color: #ccc;
+}
+.nav__li:hover {
+    color: #ccc;
+}
+.nav__li a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav__li i{
+    width: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.nav__li-container{
+    width: 180px;
+
+}
+.nav__responsive-button-container{
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: #69c;
+    margin-top: -64px;
+    z-index: 100px;
+}
+.nav__responsive-button{
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+}
+@media only screen and (max-width:500px){
+    .nav__ul{
+        display: none;
+    }
+    .nav{
+        height: 37px;
+        width: 100%;
+        
+    }
+    .nav__responsive-ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 37px;
+        padding-top: 27px;
+        height: 37px;
+    }
+    .nav__li-container{
+        position: relative;
+        top: -1000px;
+        height: 100%;
+        background-color: #9bf;
+        transition: all 1s;
+        z-index:-1;
+        padding-top: 27px;
+    }
+    .nav__responsive-li {
+        width: 100%;
+        padding: 9px 20px;
+    }
+    .nav__responsive-li i{
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: #016;
+    }
+    .nav__responsive-li a{
+        color: #016;
+        text-decoration: none;
+    }
+    .nav__responsive-ul:hover >.nav__li-container{
+        top: -27px;
+    }
+}
+
+
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/*Ultimas notas*/
+/*   1.Para centar texto se usa la propiedad: text-align: center*/
